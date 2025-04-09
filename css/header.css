@@ -1,0 +1,59 @@
+.header {
+  padding: 12px 32px;
+}
+
+.container {
+  max-width: 1376px;
+  height: auto;
+  margin: auto;
+}
+.container .header_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.container .header_content .item_phone {
+  margin-left: 207px;
+}
+.container .header_content .logo img {
+  cursor: pointer;
+}
+.container .header_content .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.container .header_content .navigation .nav_item {
+  list-style: none;
+}
+.container .header_content .navigation .nav_item .nav_items {
+  font-size: 18px;
+  color: #000;
+  padding-bottom: 8px;
+}
+.container .header_content .navigation .nav_item .nav_items a {
+  color: #000;
+  position: relative;
+}
+
+.nav_items a::before {
+  content: "";
+  width: 0%;
+  height: 1px;
+  border-bottom: 1px solid #000;
+  position: absolute;
+  top: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nav_items a:hover::before {
+  width: 100%;
+}

@@ -1,0 +1,60 @@
+@import './variables';
+
+.steps {
+    margin-bottom: 120px;
+}
+.projects{
+    padding: $container;
+    margin-bottom: 120px;
+}
+.project_content_title h3{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 66.24px;
+    color: $color_black;
+}
+.project_content_images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 25px;
+    .content_img{
+        width: 100%;
+        max-width: 31.8%;
+        height: auto;
+        max-height: 570px;
+        overflow:hidden;
+        position: relative;
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            cursor: pointer;
+        }
+    }
+}
+.content_img_hover a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(33,37,41,0.50);
+    padding: 22px 20px;
+}
+.content_img_hover a > p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22.4px;
+    color: $color_light;
+}
+.content_img_hover {
+    position: absolute;
+    z-index: 1;
+    bottom: -70px;
+    width: 100%;
+    transition: 0.3s;
+}
+.content_img:hover
+.content_img_hover {
+    bottom: 3px; 
+}

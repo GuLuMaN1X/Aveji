@@ -1,0 +1,58 @@
+@import './variables';
+.about{
+    padding: $container;
+    margin-bottom: 120px;
+}
+.about_content{
+    display: flex;
+    justify-content: space-between;
+}
+.about_content_title {
+    width: 50%;
+    height: auto;
+    h3{
+        max-width: 562px;
+        width: 100%;
+        height: auto;
+        font-weight: 400;
+        font-size: 48px;
+        line-height:66.42px;
+        color: $color_black;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+}
+.about_content_info{
+    width: 50%;
+    height: auto;
+    p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22.4px;
+        color: $color_black;
+        max-width: 446px;
+        width: 100%;
+        height: auto;   
+        margin-bottom: 16px;
+    }
+}
+.about_content_info p:last-of-type {
+    margin-bottom:  44px;
+}
+.content_info h6 {
+    font-size: 36px;
+    font-weight: 400;
+    color: $color_black;
+    margin: 0;
+}
+.content_info{
+    margin-bottom: 24px;
+    p{
+        width: 146px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22.4px;
+        color: $color_black;
+        margin: 0;
+    }
+}
